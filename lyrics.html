@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <title>All Lyrics</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Gustavo Rodrigues Oliveira " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Um simples buscador de letras para um simples amante de músicas."
+    />
+    <meta
+      name="keywords"
+      content="letras de músicas, letras, lyrics, musics lyrics"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="lyrics.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <button id="cor" onclick="mudarModo() ">Mudar cor</button>
+    </header>
+    <main>
+      <h1>All Lyrics</h1>
+      <!-- alguma imagem animada -->
+      <form onsubmit="enviarFormulario();event.preventDefault();">
+        <input type="text" id="artista" placeholder="artista" />
+        <input type="text" id="musica" placeholder="música" />
+        <button type="submit" id="enviar">Submit</button>
+      </form>
+      <!-- lyrics -->
+      <pre id="letra"></pre>
+    </main>
+    <footer>
+      <span>Insta</span>
+      <span>Linkedin</span>
+      <span>Git</span>
+      <span>Email</span>
+    </footer>
+  </body>
+  <script src="lyrics.js"></script>
+</html>
