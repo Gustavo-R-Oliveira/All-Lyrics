@@ -28,7 +28,10 @@
 
   <body>
     <header>
-      <button id="cor" onclick="mudarModo() ">Mudar cor</button>
+      <label class="switch">
+        <input type="checkbox" onclick="mudarModo()" />
+        <span class="slider"></span>
+      </label>
     </header>
     <main>
       <h1>All Lyrics</h1>
@@ -38,14 +41,20 @@
         <input type="text" id="musica" placeholder="música" />
         <button type="submit" id="enviar">Submit</button>
       </form>
-      <!-- lyrics -->
       <pre id="letra"></pre>
     </main>
     <footer>
-      <span>Insta</span>
-      <span>Linkedin</span>
-      <span>Git</span>
-      <span>Email</span>
+      <a
+        href="https://www.linkedin.com/in/gustavo-rodrigues-oliveira"
+        target="_blank"
+        ><i class="bx bxl-linkedin bx-tada-hover"></i
+      ></a>
+      <a href="https://github.com/Gustavo-R-Oliveira" target="_blank"
+        ><i class="bx bxl-github bx-tada-hover"></i
+      ></a>
+      <a href="mailto:gustavo.oliveiraa@gmail.com"
+        ><i class="bx bxl-gmail bx-tada-hover"></i
+      ></a>
     </footer>
   </body>
   <script src="lyrics.js"></script>
